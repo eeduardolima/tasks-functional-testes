@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.wcaquino.functional.TasksTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.597 s - in br.com.wcaquino.functional.TasksTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.215 s - in br.com.wcaquino.functional.TasksTest

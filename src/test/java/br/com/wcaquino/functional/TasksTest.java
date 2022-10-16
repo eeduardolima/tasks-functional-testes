@@ -22,7 +22,7 @@ public class TasksTest {
     public WebDriver acessarAplicacao() throws MalformedURLException {
         ChromeOptions chromeOptions = new ChromeOptions();
         WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.17:4444"), chromeOptions);
-        driver.navigate().to("http://localhost:8001/tasks/");
+        driver.navigate().to("http://192.168.1.17:8001/tasks/");
         return driver;
     }
 
@@ -60,7 +60,6 @@ public class TasksTest {
     @Test
     public void deveSalvarTarefaComDataPassada() throws InterruptedException, MalformedURLException {
         WebDriver driver = acessarAplicacao();
-        driver.navigate().to("http://localhost:8001/tasks/");
         driver.findElement(By.id("addTodo")).click();
         driver.findElement(By.id("task")).sendKeys("Teste via Selenium");
         driver.findElement(By.id("dueDate")).sendKeys("20/10/2012");
